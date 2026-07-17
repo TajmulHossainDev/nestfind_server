@@ -1,8 +1,8 @@
 import { Request, Response } from "express";
 import { ObjectId } from "mongodb";
-import { connectDB } from "../config/db";
-import { Wishlist } from "../types/wishlist";
-import { Listing } from "../types/listing";
+import { connectDB } from "../config/db.js";
+import { Wishlist } from "../types/wishlist.js";
+import { Listing } from "../types/listing.js";
 
 const WISHLIST = "wishlist";
 const LISTINGS = "listings";

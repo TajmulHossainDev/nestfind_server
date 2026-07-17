@@ -1,11 +1,11 @@
 import { Router } from "express";
-import { requireAuth } from "../middleware/requireAuth";
+import { requireAuth } from "../middleware/requireAuth.js";
 import {
   createBooking,
   getMyBookings,
   createCheckoutSession,
   confirmBooking,
-} from "../controllers/booking.controller";
+} from "../controllers/booking.controller.js";
 
 const router = Router();
 

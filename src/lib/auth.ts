@@ -1,7 +1,7 @@
 import { betterAuth } from "better-auth";
 import { mongodbAdapter } from "better-auth/adapters/mongodb";
 import { admin } from "better-auth/plugins";
-import { getClient } from "../config/db";
+import { getClient } from "../config/db.js";
 
 const client = getClient();
 const dbName = process.env.DB_NAME!;

@@ -2,13 +2,13 @@ import express from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import { toNodeHandler } from "better-auth/node";
-import { auth } from "./lib/auth";
-import listingRoutes from "./routes/listing.routes";
-import bookingRoutes from "./routes/booking.routes";
-import reviewRoutes from "./routes/review.routes";
-import dashboardRoutes from "./routes/dashboard.routes";
-import adminRoutes from "./routes/admin.routes";
-import wishlistRoutes from "./routes/wishlist.routes";
+import { auth } from "./lib/auth.js";
+import listingRoutes from "./routes/listing.routes.js";
+import bookingRoutes from "./routes/booking.routes.js";
+import reviewRoutes from "./routes/review.routes.js";
+import dashboardRoutes from "./routes/dashboard.routes.js";
+import adminRoutes from "./routes/admin.routes.js";
+import wishlistRoutes from "./routes/wishlist.routes.js";
 
 const app = express();
 

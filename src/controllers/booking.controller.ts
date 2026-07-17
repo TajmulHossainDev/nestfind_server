@@ -1,10 +1,10 @@
 import { Request, Response } from "express";
 import { ObjectId } from "mongodb";
-import { connectDB } from "../config/db";
-import { Booking, CreateBookingInput } from "../types/booking";
-import { Listing } from "../types/listing";
-import { stripe } from "../lib/stripe";
-import { getParam } from "../utils/params";
+import { connectDB } from "../config/db.js";
+import { Booking, CreateBookingInput } from "../types/booking.js";
+import { Listing } from "../types/listing.js";
+import { stripe } from "../lib/stripe.js";
+import { getParam } from "../utils/params.js";
 
 const BOOKINGS = "bookings";
 const LISTINGS = "listings";

@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
-import { connectDB } from "../config/db";
-import { Listing } from "../types/listing";
-import { Booking } from "../types/booking";
+import { connectDB } from "../config/db.js";
+import { Listing } from "../types/listing.js";
+import { Booking } from "../types/booking.js";
 export async function getDashboardStats(req: Request, res: Response) {
   try {
     const db = await connectDB();

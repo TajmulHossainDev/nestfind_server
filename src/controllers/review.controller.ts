@@ -1,9 +1,9 @@
 import { Request, Response } from "express";
 import { ObjectId } from "mongodb";
-import { connectDB } from "../config/db";
-import { Review, CreateReviewInput } from "../types/review";
-import { Listing } from "../types/listing";
-import { getParam } from "../utils/params";
+import { connectDB } from "../config/db.js";
+import { Review, CreateReviewInput } from "../types/review.js";
+import { Listing } from "../types/listing.js";
+import { getParam } from "../utils/params.js";
 
 const REVIEWS = "reviews";
 const LISTINGS = "listings";

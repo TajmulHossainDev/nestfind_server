@@ -1,8 +1,8 @@
 import { Request, Response } from "express";
 import { ObjectId } from "mongodb";
-import { connectDB } from "../config/db";
-import { CreateListingInput, Listing } from "../types/listing";
-import { getParam } from "../utils/params";
+import { connectDB } from "../config/db.js";
+import { CreateListingInput, Listing } from "../types/listing.js";
+import { getParam } from "../utils/params.js";
 
 const COLLECTION = "listings";
 
