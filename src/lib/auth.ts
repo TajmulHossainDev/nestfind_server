@@ -14,8 +14,8 @@ export const auth = betterAuth({
   trustedOrigins: [process.env.CLIENT_URL || "http://localhost:3000"],
   advanced: {
     defaultCookieAttributes: {
-      sameSite: "lax",
-      secure: false,
+      sameSite: "none",
+      secure: true,
       httpOnly: true,
     },
   },
